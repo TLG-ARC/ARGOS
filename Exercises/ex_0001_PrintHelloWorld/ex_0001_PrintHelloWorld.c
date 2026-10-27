@@ -9,5 +9,5 @@
 // Function definitions
 void ex_0001_PrintHelloWorld(void)
 {
-  // TODO
+  printf("hello, world\n");
 }
