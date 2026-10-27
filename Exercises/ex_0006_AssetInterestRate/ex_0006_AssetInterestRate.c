@@ -12,6 +12,8 @@ double ex_0006_AssetInterestRate(double initAssets, double interestRate, int yea
   double finalAssets = 0.0;
 
   // TODO: compute and return the final asset value
-
+  
+  finalAssets = initAssets * pow((1 + interestRate/100), years);
+  
   return finalAssets;
 }
