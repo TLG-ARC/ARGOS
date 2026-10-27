@@ -19,23 +19,30 @@ void ex_0003_SomeCalculus(double a, double b)
 
   // a) a^b
   // TODO
+  res = pow(a, b);
   printf("\n a) %f power %f = %G \n", a, b, res);
 
   // b) Hypotenuse
   // TODO
+  res = sqrt(pow(a,2)+pow(b,2));
   printf("\n b) The hypotenuse of the right triangle is %f \n", res);
 
   // c) tangent of A
   // NOTE: we consider that A is in degrees
   // WARNING: trigonometric functions use radians
   // TODO
+  
+  res = sin(a*M_PI/180)/cos(a*M_PI/180);
   printf("\n c) The tangent of A is %f \n", res);
 
   // d) Rounding down A/B
   // TODO
+  res = floor(a/b);
   printf("\n d) The rounded down value of A/B is %f \n", res);
 
   // e) Rounding down A/B with 3 decimals
   // TODO
+  res = (a/b)*1000;
+  res = floor(res)/1000;
   printf("\n e) The rounded down value of A/B with 3 decimals is %f \n\n", res);
 }
