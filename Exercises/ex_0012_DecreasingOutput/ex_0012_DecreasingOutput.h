@@ -9,5 +9,6 @@
 
 // Function prototypes
 void ex_0012_DecreasingOutput(void);
+int compare(const void *a, const void *b);
 
 #endif // EX_0012_DECREASINGOUTPUT_H
