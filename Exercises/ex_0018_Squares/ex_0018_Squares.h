@@ -11,3 +11,6 @@
 // Function prototypes
 
 #endif // EX_0018_SQUARES_H
+
+int ex_0018_Square(int value);
+bool ex_0018_Squares(int value);
