@@ -10,3 +10,5 @@
 // Function prototypes
 
 #endif // EX_0020_CALCULATOR_H
+
+double ex_0020_Calculator(double a, double b, char ope);
