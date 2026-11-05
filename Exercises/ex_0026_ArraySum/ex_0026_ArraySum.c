@@ -65,25 +65,19 @@ void ex_0026_ArraySum(void)
         printf("array:\n");
         int sum = 0;
 
-        if (array_size > 0)
+        for (int i = 0; i < array_size; i++)
         {
-            for (int i = 0; i < array_size; i++)
+            sum += array[i];
+            if (i == array_size - 1)
             {
-                sum += array[i];
-                if (i == array_size - 1)
-                {
-                    printf("%d\n", array[i]);
-                }
-                else
-                {
-                    printf("%d ", array[i]);
-                }
+                printf("%d\n", array[i]);
+            }
+            else
+            {
+                printf("%d ", array[i]);
             }
         }
-        else
-        {
-            printf("\n");
-        }
+
         printf("Total sum: %d\n", sum);
     }
 }
