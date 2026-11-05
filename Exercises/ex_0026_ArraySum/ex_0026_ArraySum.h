@@ -10,3 +10,4 @@
 // Function prototypes
 
 #endif // EX_0026_ARRAYSUM_H
+void ex_0026_ArraySum(void);
