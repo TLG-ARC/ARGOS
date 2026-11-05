@@ -66,8 +66,6 @@ void ex_0027_Array2DSum(void)
 
     if (nb_lines == 0 || nb_columns == 0)
     {
-        // printf("Nb lines (max.50): %d\n", nb_lines);
-        // printf("Nb columns (max.50): %d\n", nb_columns);
         printf("Total sum: %d\n", total_sum);
 
         return;
