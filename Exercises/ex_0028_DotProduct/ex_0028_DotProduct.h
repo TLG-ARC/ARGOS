@@ -10,3 +10,4 @@
 // Function prototypes
 
 #endif // EX_0028_DOTPRODUCT_H
+int ex_0028_DotProduct(int u[], int v[], int n);
