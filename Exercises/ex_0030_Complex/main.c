@@ -8,5 +8,7 @@
 int main(void)
 {
 
+  ex_0030_InputComplex();
+
   return 0;
 }

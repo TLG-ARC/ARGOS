@@ -12,3 +12,15 @@
 // Function prototypes
 
 #endif // EX_0030_COMPLEX_H
+
+typedef struct
+{
+    double real;
+    double imaginary;
+} Complex;
+
+Complex ex_0030_InputComplex(void);
+Complex ex_0030_SumComplex(Complex nb1, Complex nb2);
+Complex ex_0030_DiffComplex(Complex nb1, Complex nb2);
+void ex_0030_PrintComplex(Complex nb);
+void ex_0030_Complex(void);
