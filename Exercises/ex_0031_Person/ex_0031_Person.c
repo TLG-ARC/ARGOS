@@ -7,12 +7,13 @@
 // Local includes
 #include "ex_0031_Person.h"
 
+#define persons_array_size 10
 // Function definitions
 // TODO: implement ex_0031_Person
 
 void ex_0031_Person(void)
 {
-    Person persons[10] = {
+    Person persons[persons_array_size] = {
         {"Knuth", "Donald", 1938},
         {"Kernighan", "Brian", 1942},
         {"Ritchie", "Dennis", 1941},
@@ -22,7 +23,7 @@ void ex_0031_Person(void)
         {"Stroustrup", "Bjarne", 1950}};
 
     int nb_persons = 0;
-    for (int i = 0; i < 10; ++i)
+    for (int i = 0; i < persons_array_size; ++i)
     {
         if (persons[i].first_name[0] != '\0')
         {

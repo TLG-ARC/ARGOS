@@ -1,5 +1,7 @@
 // Author: HE-Arc
 
+#define MAX_CHAR 20
+
 #ifndef EX_0031_PERSON_H
 #define EX_0031_PERSON_H
 
@@ -15,8 +17,8 @@
 
 typedef struct
 {
-    char last_name[20];
-    char first_name[20];
+    char last_name[MAX_CHAR];
+    char first_name[MAX_CHAR];
     int birth_year;
 } Person;
 
