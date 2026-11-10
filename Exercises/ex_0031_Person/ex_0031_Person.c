@@ -8,6 +8,7 @@
 #include "ex_0031_Person.h"
 
 #define persons_array_size 10
+#define current_year 2020
 // Function definitions
 // TODO: implement ex_0031_Person
 
@@ -36,7 +37,7 @@ void ex_0031_Person(void)
     printf("Persons less than 80 years old:\n");
     for (int i = 0; i < nb_persons; ++i)
     {
-        int age = 2020 - persons[i].birth_year;
+        int age = current_year - persons[i].birth_year;
         if (age < 80)
         {
             printf("%s %s %d years\n", persons[i].first_name, persons[i].last_name, age);
