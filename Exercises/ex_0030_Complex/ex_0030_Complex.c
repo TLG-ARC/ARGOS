@@ -10,69 +10,33 @@
 // TODO: implement ex_0030_InputComplex, ex_0030_SumComplex, ex_0030_DiffComplex, ex_0030_PrintComplex and ex_0030_Complex
 
 Complex ex_0030_InputComplex(void)
-// {
-//     int status = 0;
-//     const int nbExpectedValues = 4;
-//     double real = 0;
-//     double imaginary = 0;
-//     char last_char = 0;
-//     char first_char = 0;
-//     bool valid = false;
-//     Complex res;
-
-//     do
-//     {
-//         printf("Please enter a complex number (r,i): ");
-//         status = scanf(" %c%lf,%lf%c", &first_char, &real, &imaginary, &last_char);
-
-//         valid = ((status == nbExpectedValues) && (first_char = '(') && (last_char == ')'));
-
-//         if (last_char != '\n' && status != EOF)
-//         {
-//             int c;
-//             do
-//             {
-//                 c = getchar();
-//             } while (c != '\n' && c != EOF);
-//         }
-//     } while (!valid && status != EOF);
-
-//     res.real = real;
-//     res.imaginary = imaginary;
-
-//     return res;
-// }
 {
     double real = 0;
     double imaginary = 0;
-    int valid = 0;
-    int eof = 0;
+    int c = 0;
+    bool valid = false;
     Complex res;
 
     do
     {
-        int status;
-        int n = 0; /* only set by scanf if the ')' was matched */
-        int c;
+        int status = 0;
 
         printf("Please enter a complex number (r,i): ");
-        status = scanf(" ( %lf , %lf )%n", &real, &imaginary, &n);
+        status = scanf(" ( %lf , %lf )", &real, &imaginary);
 
-        valid = (status == 2 && n > 0);
+        if (status == 2)
+        {
+            valid = true;
+        }
 
-        /* Flush the line, and reject anything but spaces/tabs after ')' */
         while ((c = getchar()) != '\n' && c != EOF)
         {
             if (c != ' ' && c != '\t')
             {
-                valid = 0;
+                valid = false;
             }
         }
-        if (c == EOF)
-        {
-            eof = 1;
-        }
-    } while (!valid && !eof);
+    } while (!valid && c != EOF);
 
     res.real = real;
     res.imaginary = imaginary;
