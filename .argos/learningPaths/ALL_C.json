@@ -74,6 +74,13 @@
         "ex_0030_Complex",
         "ex_0031_Person"
       ]
+    },
+    {
+      "name": "Pointers / dereferencing",
+      "pointsToComplete": 1,
+      "exercises": [
+        "ex_0034_Reset"
+      ]
     }
   ]
 }
