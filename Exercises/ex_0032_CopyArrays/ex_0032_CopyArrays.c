@@ -12,9 +12,6 @@ void ex_0032_CopyArrays(const int *src, int *dst, int n)
 {
     for (int i = 0; i < n; ++i)
     {
-        dst[i] = src[i];
-
-        // ou :
-        // *dst++ = *src++;
+        *dst++ = *src++;
     }
 }
