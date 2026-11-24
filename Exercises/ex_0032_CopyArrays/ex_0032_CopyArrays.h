@@ -10,3 +10,5 @@
 // Function prototypes
 
 #endif // EX_0032_COPYARRAYS_H
+
+void ex_0032_CopyArrays(const int *src, int *dst, int n);
