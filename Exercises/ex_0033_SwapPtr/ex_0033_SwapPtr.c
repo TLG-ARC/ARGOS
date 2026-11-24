@@ -7,3 +7,9 @@
 
 // Function definitions
 // TODO: implement ex_0033_SwapPtr
+void ex_0033_SwapPtr(int *a, int *b)
+{
+    int tmp = *a;
+    *a = *b;
+    *b = tmp;
+}

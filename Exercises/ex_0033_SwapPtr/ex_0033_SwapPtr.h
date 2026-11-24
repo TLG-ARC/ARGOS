@@ -10,3 +10,5 @@
 // Function prototypes
 
 #endif // EX_0033_SWAPPTR_H
+
+void ex_0033_SwapPtr(int *a, int *b);

@@ -10,3 +10,4 @@
 // Function prototypes
 
 #endif // EX_0034_RESET_H
+void ex_0034_Reset(int *value);
