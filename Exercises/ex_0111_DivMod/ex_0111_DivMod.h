@@ -10,3 +10,4 @@
 // Function prototypes
 
 #endif // EX_0111_DIVMOD_H
+void ex_0111_DivMod(int dividend, int divisor, int *quotient, int *remainder);
