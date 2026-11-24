@@ -15,6 +15,7 @@ void ex_0114_AccumulateStats(const int values[], int count, int *sum, double *me
     for (int i = 0; i < count; ++i)
     {
         *sum = *sum + values[i];
-        *mean = (double)*sum / (double)count;
     }
+
+    *mean = (double)*sum / (double)count;
 }
