@@ -10,3 +10,4 @@
 // Function prototypes
 
 #endif // EX_0114_ACCUMULATESTATS_H
+void ex_0114_AccumulateStats(const int values[], int count, int *sum, double *mean);
