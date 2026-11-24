@@ -10,3 +10,4 @@
 // Function prototypes
 
 #endif // EX_0035_RESETPOINTER_H
+void ex_0035_ResetPointer(int **pointer);
