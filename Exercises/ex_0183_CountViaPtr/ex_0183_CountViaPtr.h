@@ -10,3 +10,4 @@
 // Function prototypes
 
 #endif // EX_0183_COUNTVIAPTR_H
+void ex_0183_CountViaPtr(int values[], int size, int target, int *count);
