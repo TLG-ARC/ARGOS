@@ -10,3 +10,4 @@
 // Function prototypes
 
 #endif // EX_0184_DEREFMODIFY_H
+void ex_0184_DerefModify(int *value, int delta);
