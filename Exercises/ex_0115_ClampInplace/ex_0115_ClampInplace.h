@@ -10,3 +10,4 @@
 // Function prototypes
 
 #endif // EX_0115_CLAMPINPLACE_H
+void ex_0115_ClampInplace(int *value, int min, int max);
